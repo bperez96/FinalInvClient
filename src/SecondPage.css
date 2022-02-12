@@ -29,9 +29,7 @@ button.SecondPage{
   width: 15vw;
 }
 
-button.SecondPage: disabled{
-  color: black;
-}
+
 
 
 label.SecondPage{
