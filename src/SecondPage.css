@@ -1,0 +1,166 @@
+.SecondPage {
+  text-align: left;
+  background-color:  black;
+  color: white;
+  width: 60vw;
+}
+
+input[type=text].SecondPage{
+  background-color:  darkgray;
+  color: white;
+  width: 8vw;
+  font-size: 1.75vw;
+  margin-left: 2vw;
+}
+
+select.SecondPage{
+  background-color:  darkgray;
+  color: white;
+  margin-left: 2vw;
+  width: 15vw;
+  font-size: 1.75vw;
+}
+
+button.SecondPage{
+  background-color:  darkgray;
+  color: white;
+  margin-left: 2.5vw;
+  font-size: 2vw;
+  width: 15vw;
+}
+
+button.SecondPage: disabled{
+  color: black;
+}
+
+
+label.SecondPage{
+  margin-left: 2.5vw;
+  font-size: 2vw;
+}
+
+.logOffButton{
+  position: relative;
+  left: 30vw;
+  color: white;
+  background-color: black; 
+  border: none; 
+  font-size: 3vw;
+}
+
+
+.logOffButton:hover {
+  color: lightblue;
+}
+
+.BlueSpan{
+  color:  lightblue;
+}
+
+.AppSelect{
+  margin-left: 1.5vw;
+  font-size: 1.25vw;
+  color: lightgray;
+}
+
+.loader {
+    position: relative;
+    left: 25vw;
+    bottom: 0vw;
+    height: 7% !important;
+    width: 7% !important;
+}
+
+.topMainCol{
+  float: left;
+  width: 50%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white; 
+}
+
+.topRightCol{
+  float: right;
+  width: 40%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+
+}
+
+.topLeftCol{
+  float: left;
+  width: 60%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+
+}
+
+.mainCol {
+  float: left;
+  width: 70%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+  
+}
+
+.rightCol {
+  float: left;
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.resultBlabel {
+  font-size: 2vw;
+}
+
+.resultBmargin{
+  margin-bottom: 1.25vw;
+}
+
+.resultMlabel{
+  font-size: 1.75vw;
+}
+
+.resultMmargin{
+  margin-bottom: 0.5vw;
+}
+
+.spanLB{
+  color:  lightblue;
+}
+
+@media screen and (max-width: 800px) {
+  .rightCol, .mainCol {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .topMainCol, .topMainCol {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topRightCol, .topLeftCol {
+    width: 100%;
+  }
+}

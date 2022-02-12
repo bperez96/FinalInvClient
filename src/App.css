@@ -1,0 +1,173 @@
+.App {
+  text-align: left;
+  background-color:  black;
+  color: white;
+  width: 60vw;
+}
+
+input[type=text].App{
+  background-color:  darkgray;
+  color: white;
+  width: 8vw;
+  font-size: 1.75vw;
+  margin-left: 1.5vw;
+}
+
+select.App{
+  background-color:  darkgray;
+  color: white;
+  margin-left: 1.5vw;
+  font-size: 1.75vw;
+  width: 12vw;
+}
+
+button.App{
+  background-color:  darkgray;
+  color: white;
+  padding:  1vw 1vw;
+  margin-left: 3vw;
+  font-size: 2vw;
+  width: 15vw;
+}
+
+
+label.App{
+  margin-left: 3vw;
+  font-size: 2vw;
+}
+
+.lbSpan{
+  color:  lightblue;
+}
+
+.BlueSpan{
+  color:  lightblue;
+  font-size:  2vw;
+}
+
+.AppSelect{
+  margin-left: 2vw;
+  font-size: 1.75vw;
+  color: lightgray;
+}
+
+.topRightCol{
+  float: right;
+  width: 40%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+
+}
+
+.thirdCol{
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.topRightBigCol{
+  float: right;
+  width: 60%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+
+}
+
+.leftSmallCol{
+  float: left;
+  width: 40%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+
+}
+
+.topLeftCol{
+  float: left;
+  width: 60%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+
+}
+
+.mainCol {
+  float: left;
+  width: 70%;
+  height:  100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+  
+}
+
+.rightCol {
+  float: right;
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  background-color:  black;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.resultBlabel {
+  font-size: 2vw;
+}
+
+.resultBmargin{
+  margin-bottom: 1.25vw;
+}
+
+.resultMlabel{
+  font-size: 1.75vw;
+}
+
+.resultMmargin{
+  margin-bottom: 0.5vw;
+}
+
+.loader {
+    position: relative;
+    left: 25vw;
+    bottom: 4vw;
+    height: 7% !important;
+    width: 7% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .topRightCol, .topLeftCol {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .rightCol, .mainCol {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topRightBigCol, .leftSmallCol {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .thirdCol {
+    width: 100%;
+  }
+}
