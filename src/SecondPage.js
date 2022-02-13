@@ -505,14 +505,14 @@ function getLoginForm(){
  	return(
  		<div>
  		<h1 style={{marginLeft: "3.5vw", fontSize: "3vw", color: "lightblue"}}>Login Form</h1>
- 				<div style={{marginBottom: "2vw"}}>
+ 				<div style={{marginBottom: "2vw", color: "white"}}>Username: 
 			<input style={{marginLeft: "3.5vw", width: "25vw", fontSize: "2.5vw"}} type="text" name="username" value={inUser} onChange={(e) => setInUser(e.target.value)} required/>
 			</div>
-				<div>
+				<div style={{marginBottom: "2vw", color: "white"}}>Password: 
 			<input style={{marginLeft: "3.5vw", width: "25vw", fontSize: "2.5vw"}} type="password" name="password" value={inPassw} onChange={(e) => setInPassw(e.target.value)} required/>
 				</div>
-
-			<div><button style={{marginTop: "2vw", marginLeft: "3.5vw", width: "15vw", fontSize: "2vw"}} type="button" onClick={logIn}>Log In</button>
+			<div>
+			<button style={{marginTop: "2vw", marginLeft: "3.5vw", width: "15vw", fontSize: "2vw"}} type="button" onClick={logIn}>Log In</button>
 			</div>
 			<div>
 			<button type="button" onClick={signUp} style={{marginTop: "2vw", marginLeft: "3.5vw", width: "15vw", fontSize: "2vw"}}>Sign Up</button>
