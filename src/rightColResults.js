@@ -145,7 +145,7 @@ function retRightCol(data, currPrice, avg_dec, currProf, pData, roundPrice){
 
   	return(
   	<div style={{marginTop: '2vw'}} >
-  		<h1 style={{color: "lightblue", fontSize:"3vw"}}>Input results</h1>
+  		<h1 style={{color: "lightblue", fontSize:"3vw"}}>Computed results</h1>
 		  <div className="resultBmargin"><label className="resultBlabel"><span style={{color: "darkgrey"}}>Selected Ticker:</span> {"\u00A0"} {data.loading ? "Input required..." : data.ticker}</label></div>
 		  <div className="resultMmargin"><label className="resultBlabel" style ={{ color:"darkgrey"}}>Current Price:</label></div>
 		  <div className="resultBmargin"><label className="resultBlabel">{currProf.loading ? "" : retCurrPrice()}</label></div>
