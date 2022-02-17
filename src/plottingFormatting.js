@@ -227,8 +227,8 @@ function returnSpendGraph(  pData ){
           data={pData.loading ? [] : marketValList}
           margin={{
             top: 5,
-            right: 25,
-            left: 50,
+            right: 10,
+            left: 60,
             bottom: 5
           }}
         >
