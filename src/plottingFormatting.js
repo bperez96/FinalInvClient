@@ -219,9 +219,9 @@ function returnSpendGraph(  pData ){
   }
 
   return(
-   <div style={{marginBottom: '3vw', textAlign: "right"}}>
+   <div style={{marginBottom: '3vw', marginRight: "2vw"}}>
     <div style={{textAlign: 'center', marginBottom: '1vw', fontSize: '2vw'}}>Portfolio Market Value</div>
-      <ResponsiveContainer width="90%" aspect={1.5}>
+      <ResponsiveContainer width="80%" aspect={1.5}>
         <LineChart
           fontColor={"white"}
           data={pData.loading ? [] : marketValList}
@@ -246,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -25 , font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -35 , font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
@@ -315,7 +315,7 @@ function returnComparissonGraph(  pData ){
             domain={[{minRel},{maxRel}]}
             type = "number"
             tickFormatter={regularRound}
-            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -50 , font: 'Arial'}}
+            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -25 , font: 'Arial'}}
           />
           <Tooltip content={<CustomComparissonTooltip />}  />
           <Legend />
