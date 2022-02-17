@@ -115,7 +115,7 @@ function returnPriceGraph(  pData, pMin, pMax){
     }
     return (
       <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderColor: 'gray'
-        ,color: 'black', fontSize: "1vw"}}>
+        ,color: 'black', fontSize: "2vw"}}>
        <p >{`${"Date: "+dateFormatter(payload[0]?.payload?.date)}`}</p>
        <p >{"Price: "+priceFormatter(payload[0].payload?.price)+"\u00A0"}<span style = {{color: colProf}}>{ 
         "("}{retArrow(profBool)}{priceFormatter(tempProfit)+", "+tempPerProfit.toLocaleString('en-US')+"%"}</span>
