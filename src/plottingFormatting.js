@@ -246,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value Value123', angle: -90, fill : 'white', fontSize: '1.75vw', dx: {5} , font: 'Arial'}}
+            label={{value: 'Value Value123', angle: -90, fill : 'white', fontSize: '1.75vw', dx: 5 , font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
@@ -315,7 +315,7 @@ function returnComparissonGraph(  pData ){
             domain={[{minRel},{maxRel}]}
             type = "number"
             tickFormatter={regularRound}
-            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: {5} , font: 'Arial'}}
+            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: 5 , font: 'Arial'}}
           />
           <Tooltip content={<CustomComparissonTooltip />}  />
           <Legend />
@@ -541,7 +541,7 @@ function returnHPGraph( gHP){
           <YAxis 
             stroke= {'white'}
             type = "number"
-            label ={<GetYAxis />}
+            label={{value: 'Percent spend testingg', angle: -90, fill : 'white', fontSize: '1.75vw', font: 'Arial'}}
             tickFormatter={(item)=>item+"%"}
           />
           <Legend content = {getNothing}/>
