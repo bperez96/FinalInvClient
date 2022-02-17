@@ -246,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',dx:{5}, font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',dx: 5, font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
