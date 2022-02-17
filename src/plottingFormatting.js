@@ -161,7 +161,7 @@ function returnPriceGraph(  pData, pMin, pMax){
           domain={[{pMin},{pMax}]}
           type = "number"
           tickFormatter={priceFormatter}
-          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", left:"2vw", font: 'Arial'}}
+          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '2vw', position: "relative", left:"2vw", font: 'Arial'}}
         />
         <Tooltip content={<CustomPriceTooltip />}/>
         <Legend content={getNothing}/>
@@ -248,7 +248,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -15, dy: -100, font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',position: "relative", left:"2vw", font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
@@ -317,7 +317,7 @@ function returnComparissonGraph(  pData ){
             domain={[{minRel},{maxRel}]}
             type = "number"
             tickFormatter={regularRound}
-            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -15, dy: -100, font: 'Arial'}}
+            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", left:"2vw", font: 'Arial'}}
           />
           <Tooltip content={<CustomComparissonTooltip />}  />
           <Legend />
@@ -440,7 +440,7 @@ function returnPeakGraph(spyData){
           <YAxis
             stroke= {'white'}
             type = "number"
-            label={{value: 'Price', angle: 0, fill : 'white', fontSize: '1.5vw', dx: -20, dy: -100, font: 'Arial'}}
+            label={{value: 'Price', angle: 0, fill : 'white', fontSize: '1.5vw',position: "relative", left:"2vw", font: 'Arial'}}
             domain = {[spyMinP, (spyMaxP*1.03)]}
             tickFormatter={priceFormatter}
           />
@@ -540,7 +540,7 @@ function returnHPGraph( gHP){
           <YAxis
             stroke= {'white'}
             type = "number"
-            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -30, dy: -100, font: 'Arial'}}
+            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", left:"2vw", font: 'Arial'}}
             tickFormatter={(item)=>item+"%"}
           />
           <Legend content = {getNothing}/>
