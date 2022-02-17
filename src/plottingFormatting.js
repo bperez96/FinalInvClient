@@ -221,7 +221,7 @@ function returnSpendGraph(  pData ){
   return(
    <div style={{marginBottom: '3vw', marginRight: "2vw"}}>
     <div style={{textAlign: 'center', marginBottom: '1vw', fontSize: '2vw'}}>Portfolio Market Value</div>
-      <ResponsiveContainer width="80%" aspect={1.5}>
+      <ResponsiveContainer width="95%" aspect={1.5}>
         <LineChart
           fontColor={"white"}
           data={pData.loading ? [] : marketValList}
