@@ -543,8 +543,8 @@ function getIntro(){
 			This is your user page. Here you can store back testing
 			cases for future reference. These will update with current prices. </p>
 			<p style={{fontSize:"2vw", marginRight: "2vw", marginLeft: "1vw"}}>
-			Scroll down to add to your list of back testing cases
-			 and compute live updates. The interactive relative spend plot is included for user reference. 
+			Scroll down to add to your list of back testing cases. Once a case is
+			 successfully added users can compute live updates. The interactive relative spend plot is included for user reference. 
 
 			</p>
 			</div>)
