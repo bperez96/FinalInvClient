@@ -513,6 +513,10 @@ function returnHPGraph( gHP){
       return(null)
     }
   };
+
+  function getYAxis(){
+    return(<div style={{color: "white"}}>YAXISS</div>)
+  }
   return(
    <div style={{marginBottom: '3vw', marginTop: "3vw"}}>
     <div style={{textAlign: 'center', marginBottom: '1.5vw', fontSize: '2vw'}}>Relative spend plot</div>
@@ -535,10 +539,7 @@ function returnHPGraph( gHP){
             tickFormatter={(item)=>item+"%"}
           />
           <YAxis
-            stroke= {'white'}
-            type = "number"
-            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', position: "left", offset: {45}, font: 'Arial'}}
-            tickFormatter={(item)=>item+"%"}
+            content = {getYAxis}
           />
           <Legend content = {getNothing}/>
           <Tooltip content={<CustomHPTooltip />}  />
@@ -548,6 +549,14 @@ function returnHPGraph( gHP){
       </div>
   );
 };
+
+
+ /// stroke= {'white'}
+ //            type = "number"
+ //            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', position: "left", offset: {45}, font: 'Arial'}}
+ //            tickFormatter={(item)=>item+"%"}
+
+
 
 export{dateFormatter, priceFormatter, returnStroke, returnHPGraph,
 returnPeakGraph, returnPriceGraph, returnSpendGraph, returnComparissonGraph};
