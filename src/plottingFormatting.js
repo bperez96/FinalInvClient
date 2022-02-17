@@ -161,7 +161,7 @@ function returnPriceGraph(  pData, pMin, pMax){
           domain={[{pMin},{pMax}]}
           type = "number"
           tickFormatter={priceFormatter}
-          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -15, dy: -100, font: 'Arial'}}
+          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '1.75vw', position: "insideRight", font: 'Arial'}}
         />
         <Tooltip content={<CustomPriceTooltip />}/>
         <Legend content={getNothing}/>
