@@ -420,8 +420,8 @@ function returnPeakGraph(spyData){
           data={spyData.value==0 ? [] : spyData.value}
           margin={{
             top: 0,
-            right: 30,
-            left: 20,
+            right: 15,
+            left: 35,
             bottom: 5
           }}
         >
@@ -437,7 +437,7 @@ function returnPeakGraph(spyData){
           <YAxis
             stroke= {'white'}
             type = "number"
-            label={{value: 'Price', angle: 0, fill : 'white', fontSize: '1.5vw',position: "relative", left:"2vw", font: 'Arial'}}
+            label={{value: 'Price', angle: 0, fill : 'white', fontSize: '1.5vw',dx: -50, font: 'Arial'}}
             domain = {[spyMinP, (spyMaxP*1.03)]}
             tickFormatter={priceFormatter}
           />
