@@ -139,8 +139,8 @@ function returnPriceGraph(  pData, pMin, pMax){
         data={pData.loading ? [] : pData.yrPrice}
         margin={{
           top: 5,
-          right: 30,
-          left: 20,
+          right: 0,
+          left: 70,
           bottom: 5
         }}
       >
@@ -159,7 +159,7 @@ function returnPriceGraph(  pData, pMin, pMax){
           domain={[{pMin},{pMax}]}
           type = "number"
           tickFormatter={priceFormatter}
-          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '2vw', position: "relative", right:"50%", font: 'Arial'}}
+          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '2vw' , dx: -60, font: 'Arial'}}
         />
         <Tooltip content={<CustomPriceTooltip />}/>
         <Legend content={getNothing}/>
@@ -437,7 +437,7 @@ function returnPeakGraph(spyData){
           <YAxis
             stroke= {'white'}
             type = "number"
-            label={{value: 'Price', angle: 0, fill : 'white', fontSize: '1.5vw',dx: -70, font: 'Arial'}}
+            label={{value: 'Price', angle: 0, fill : 'white', fontSize: '1.5vw', dx: -70, font: 'Arial'}}
             domain = {[spyMinP, (spyMaxP*1.03)]}
             tickFormatter={priceFormatter}
           />
