@@ -246,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',position: "relative", left:"2vw",bottom: "2vw", font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',dx:{5}, font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
@@ -315,7 +315,7 @@ function returnComparissonGraph(  pData ){
             domain={[{minRel},{maxRel}]}
             type = "number"
             tickFormatter={regularRound}
-            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: {"3vw"} , font: 'Arial'}}
+            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: {5} , font: 'Arial'}}
           />
           <Tooltip content={<CustomComparissonTooltip />}  />
           <Legend />
