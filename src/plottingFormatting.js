@@ -315,7 +315,7 @@ function returnComparissonGraph(  pData ){
             domain={[{minRel},{maxRel}]}
             type = "number"
             tickFormatter={regularRound}
-            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", right:"3vw", font: 'Arial'}}
+            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", right:"10vw", font: 'Arial'}}
           />
           <Tooltip content={<CustomComparissonTooltip />}  />
           <Legend />
