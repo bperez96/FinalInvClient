@@ -41,10 +41,9 @@ const CustomProfitTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
       <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderWidth: '0.25px', borderColor: 'gray'
-        ,color: 'black'}}>
+        ,color: 'black', fontSize: "2vw"}}>
        <p >{`${"Date: "+dateFormatter(payload[0]?.payload?.date)}`}</p>
-       <p >{`${"Profit: "+priceFormatter(payload[0].payload?.value)}`}</p>
-       
+       <p >{`${"Profit: "+priceFormatter(payload[0].payload?.value)}`}</p>  
       </div>
     )
    }
@@ -119,8 +118,7 @@ function returnPriceGraph(  pData, pMin, pMax){
        <p >{`${"Date: "+dateFormatter(payload[0]?.payload?.date)}`}</p>
        <p >{"Price: "+priceFormatter(payload[0].payload?.price)+"\u00A0"}<span style = {{color: colProf}}>{ 
         "("}{retArrow(profBool)}{priceFormatter(tempProfit)+", "+tempPerProfit.toLocaleString('en-US')+"%"}</span>
-     }</p>
-       
+     }</p>    
       </div>
     )
    }
@@ -161,7 +159,7 @@ function returnPriceGraph(  pData, pMin, pMax){
           domain={[{pMin},{pMax}]}
           type = "number"
           tickFormatter={priceFormatter}
-          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '2vw', position: "relative", left:"2vw", font: 'Arial'}}
+          label={{value: 'Price', angle: -90, fill : 'white', fontSize: '2vw', position: "relative", right:"25%",bottom:"2vw", font: 'Arial'}}
         />
         <Tooltip content={<CustomPriceTooltip />}/>
         <Legend content={getNothing}/>
@@ -204,7 +202,7 @@ function returnSpendGraph(  pData ){
     }
     return (
       <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderWidth: '0.25px', borderColor: 'gray'
-        ,color: 'black'}}>
+        ,color: 'black', fontSize: "2vw"}}>
        <p >{`${"Date: "+dateFormatter(payload[0]?.payload?.date)}`}</p>
        <p >{"Value: "+priceFormatter(payload[0].payload?.value)+"\u00A0"}<span style = {{color: colProf}}>{ 
         "("}{retArrow(profBool)}{priceFormatter(tempProfit)+", "+tempPerProfit.toLocaleString('en-US')+"%"}</span>
@@ -248,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',position: "relative", left:"2vw", font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw',position: "relative", left:"2vw",bottom: "2vw", font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
@@ -275,8 +273,8 @@ function returnComparissonGraph(  pData ){
     if (active && payload && payload.length) {
  
     return (
-      <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderWidth: '0.25px', borderColor: 'gray'
-        ,color: 'black'}}>
+      <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderColor: 'gray'
+        ,color: 'black', fontSize: "2vw"}}>
        <p >{`${"Date: "+dateFormatter(payload[0]?.payload?.date)}`}</p>
        <p >{"Relative Price: "+Math.round(payload[0].payload?.relPrice*100)/100+"\u00A0"}</p>
        <p >{"Relative Spend: "+Math.round(payload[0].payload?.relSpend*100)/100+"\u00A0"}</p>
@@ -317,7 +315,7 @@ function returnComparissonGraph(  pData ){
             domain={[{minRel},{maxRel}]}
             type = "number"
             tickFormatter={regularRound}
-            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", left:"2vw", font: 'Arial'}}
+            label={{value: 'Normalized Value', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", right:"3vw", font: 'Arial'}}
           />
           <Tooltip content={<CustomComparissonTooltip />}  />
           <Legend />
@@ -371,12 +369,11 @@ function returnPeakGraph(spyData){
     }
     return (
       <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderWidth: '0.25px', borderColor: 'gray'
-        ,color: 'black'}}>
+        ,color: 'black', fontSize: "2vw"}}>
        <p >{`${"Date: "+dateFormatter(payload[0]?.payload?.date)}`}</p>
        <p >{"Price: "+priceFormatter(payload[0].payload?.price)+"\u00A0"}<span style = {{color: colProf}}>{ 
         "("}{retArrow(profBool)}{priceFormatter(tempProfit)+", "+tempPerProfit.toLocaleString('en-US')+"%"}</span>
-     }</p>
-       
+     }</p>    
       </div>
     )
    }
@@ -492,7 +489,7 @@ function returnHPGraph( gHP){
  
     return (
       <div style= {{backgroundColor: 'white', borderStyle: 'solid', borderWidth: '0.25px', borderColor: 'gray'
-        ,color: 'black'}}>
+        ,color: 'black', fontSize: "2vw"}}>
        <p >{"52 wk high drop: "+Math.round(payload[0]?.payload?.dec*100)/100+"%"}</p>
        <p >{"Percent Spend: "+Math.round(payload[0].payload?.funcVal*100)/100+"%"}</p>
       </div>
@@ -540,7 +537,7 @@ function returnHPGraph( gHP){
           <YAxis
             stroke= {'white'}
             type = "number"
-            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", left:"2vw", font: 'Arial'}}
+            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', position: "relative", left:"3vw", font: 'Arial'}}
             tickFormatter={(item)=>item+"%"}
           />
           <Legend content = {getNothing}/>
