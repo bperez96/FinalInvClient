@@ -514,7 +514,7 @@ function returnHPGraph( gHP){
     }
   };
 
-  function getYAxis(){
+  function GetYAxis(){
     return(<div style={{color: "white"}}>YAXISS</div>)
   }
   return(
@@ -538,8 +538,11 @@ function returnHPGraph( gHP){
             type = "number"
             tickFormatter={(item)=>item+"%"}
           />
-          <YAxis
-            content = {getYAxis}
+          <YAxis 
+            stroke= {'white'}
+            type = "number"
+            label ={<GetYAxis />}
+            tickFormatter={(item)=>item+"%"}
           />
           <Legend content = {getNothing}/>
           <Tooltip content={<CustomHPTooltip />}  />
