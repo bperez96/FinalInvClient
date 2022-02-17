@@ -221,7 +221,7 @@ function returnSpendGraph(  pData ){
   return(
    <div style={{marginBottom: '3vw'}}>
     <div style={{textAlign: 'center', marginBottom: '1vw', fontSize: '2vw'}}>Portfolio Market Value</div>
-      <ResponsiveContainer width="95%" aspect={1.5}>
+      <ResponsiveContainer width="90%" aspect={1.5}>
         <LineChart
           fontColor={"white"}
           data={pData.loading ? [] : marketValList}
@@ -246,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value Value123', angle: -90, fill : 'white', fontSize: '1.75vw', dx: 5 , font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -25 , font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
