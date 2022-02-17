@@ -537,7 +537,7 @@ function returnHPGraph( gHP){
           <YAxis
             stroke= {'white'}
             type = "number"
-            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', dx: 30, font: 'Arial'}}
+            label={{value: 'Percent spend', angle: -90, fill : 'white', fontSize: '1.75vw', dx: {30}, font: 'Arial'}}
             tickFormatter={(item)=>item+"%"}
           />
           <Legend content = {getNothing}/>
