@@ -227,8 +227,8 @@ function returnSpendGraph(  pData ){
           data={pData.loading ? [] : marketValList}
           margin={{
             top: 5,
-            right: 10,
-            left: 60,
+            right: 0,
+            left: 75,
             bottom: 5
           }}
         >
@@ -246,7 +246,7 @@ function returnSpendGraph(  pData ){
             domain={[{spendMin},{spendMax}]}
             type = "number"
             tickFormatter={priceFormatter}
-            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -50 , font: 'Arial'}}
+            label={{value: 'Value', angle: -90, fill : 'white', fontSize: '1.75vw', dx: -75 , font: 'Arial'}}
           />
           <Tooltip content={<CustomProfitTooltip />}  />
           <Legend content = {getNothing}/>
