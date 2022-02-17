@@ -514,8 +514,8 @@ function returnHPGraph( gHP){
     }
   };
 
-  function GetYAxis(){
-    return(<div style={{color: "white"}}>YAXISS</div>)
+  const GetYAxis = ()=>{
+    return(<div style={{color: "white"}}>YAXISS</div>);
   }
   return(
    <div style={{marginBottom: '3vw', marginTop: "3vw"}}>
